@@ -82,16 +82,57 @@
   <!-- SEARCH RESULTS -->
   <main>
     <section class="d-flex search_results">
+      <!-- Filter column (left) -->
       <div class="col-3 bg-light">
-        <div class="custom-control custom-checkbox d-flex justify-content-around py-4">
+        <!-- New or Used -->
+        <div class="custom-control custom-checkbox d-flex justify-content-around pt-4">
           <input type="checkbox" class="custom-control-input" id="checkbox-new">
           <label class="custom-control-label" for="checkbox-new">New</label>
           <input type="checkbox" class="custom-control-input" id="checkbox-used">
           <label class="custom-control-label" for="checkbox-used">Used</label>
         </div>
+        <!-- Languages -->
+        <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Language</div>
+        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+          <input type="checkbox" class="custom-control-input" id="checkbox-english">
+          <label class="custom-control-label" for="checkbox-english">English</label>
+        </div>
+        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+          <input type="checkbox" class="custom-control-input" id="checkbox-spanish">
+          <label class="custom-control-label" for="checkbox-spanish">Spanish</label>
+        </div>
+        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+          <input type="checkbox" class="custom-control-input" id="checkbox-russian">
+          <label class="custom-control-label" for="checkbox-russian">Russian</label>
+        </div>
+        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+          <input type="checkbox" class="custom-control-input" id="checkbox-chinese">
+          <label class="custom-control-label" for="checkbox-chinese">Chinese</label>
+        </div>
+        <!-- Price Range -->
+        <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Price Range</div>
+        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+          <input type="checkbox" class="custom-control-input" id="price-1-10">
+          <label class="custom-control-label" for="price-1-10">$10 - $20</label>
+        </div>
+        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+          <input type="checkbox" class="custom-control-input" id="price-20-30">
+          <label class="custom-control-label" for="price-20-30">$20 - $30</label>
+        </div>
+        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+          <input type="checkbox" class="custom-control-input" id="price-30-40">
+          <label class="custom-control-label" for="price-30-40">$30 - $40</label>
+        </div>
+        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+          <input type="checkbox" class="custom-control-input" id="price-40">
+          <label class="custom-control-label" for="price-40">$40+</label>
+        </div>
       </div>
-      <div class="col-9">
-        <h5>138 Search results for "keyword" in Genre Horror</h5>
+      <!-- Results column (right) -->
+      <div class="col-9 border border-muted">
+        <div class="border-bottom border-muted">
+          <h5>138 Search results for "keyword" in Genre Horror</h5>
+        </div>
       </div>
     </section>
   </main>
