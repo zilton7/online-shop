@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Book Store</title>
+</head>
+
+<body>
+    <header>
+        <!-- TOP NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand text-uppercase text-white font-weight-bold logo" href="#">Bookix</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav nav_left">
+                        <li class="nav-item active">
+                            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold"
+                                href=" #">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold"
+                                href=" #">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold" href="#">Purchase
+                                List</a>
+                        </li>
+                        <li class="nav-item rounded text-uppercase text-white font-weight-bold special">
+                            <a class="nav-link px-4 text-white" href="#">Post an Ad</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav_right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-envelope" style="color:grey"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 text-white font-weight-bold font-bold" href="#">JohnDoe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- SEARCH AREA -->
+        <section class="d-flex flex-column align-items-center py-4 search_area">
+            <div class="search_area_header">
+                <h1 class="text-white font-weight-bold">BOOKIX</h1>
+                <p class="text-white">Buying & Selling Books was Never Easier</p>
+            </div>
+            <form action="#">
+                <div class="form-group d-flex flex-row justify-content-center align-items-center search_form">
+                    <div class="form-group">
+                        <select class="form-control form-control-lg" name="genre" id="cars">
+                            <option value="" disabled selected>Select genre</option>
+                            <option value="action">Action</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="detective">Detective</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="horror">Horror</option>
+                            <option value="romance">Romance</option>
+                            <option value="sci-fi">Sci-Fi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg"
+                            placeholder="Enter Book Title, Author, ISPN or Keyword">
+                    </div>
+                    <button type="submit"
+                        class="btn btn-dark btn-lg mb-3 ml-3 px-4 text-muted rounded-0">Search</button>
+                </div>
+            </form>
+        </section>
+    </header>
+    <!-- SEARCH RESULTS -->
+    <main>
+        <section class="d-flex search_results">
+            <!-- Filter column (left) -->
+            <div class="col-3 bg-light">
+                <!-- New or Used -->
+                <div class="custom-control custom-checkbox d-flex justify-content-around pt-4">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-new">
+                    <label class="custom-control-label" for="checkbox-new">New</label>
+                    <input type="checkbox" class="custom-control-input" id="checkbox-used">
+                    <label class="custom-control-label" for="checkbox-used">Used</label>
+                </div>
+                <!-- Languages -->
+                <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Language
+                </div>
+                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-english">
+                    <label class="custom-control-label" for="checkbox-english">English</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-spanish">
+                    <label class="custom-control-label" for="checkbox-spanish">Spanish</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-russian">
+                    <label class="custom-control-label" for="checkbox-russian">Russian</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-chinese">
+                    <label class="custom-control-label" for="checkbox-chinese">Chinese</label>
+                </div>
+                <!-- Price Range -->
+                <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Price Range
+                </div>
+                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+                    <input type="checkbox" class="custom-control-input" id="price-1-10">
+                    <label class="custom-control-label" for="price-1-10">$10 - $20</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+                    <input type="checkbox" class="custom-control-input" id="price-20-30">
+                    <label class="custom-control-label" for="price-20-30">$20 - $30</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+                    <input type="checkbox" class="custom-control-input" id="price-30-40">
+                    <label class="custom-control-label" for="price-30-40">$30 - $40</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
+                    <input type="checkbox" class="custom-control-input" id="price-40">
+                    <label class="custom-control-label" for="price-40">$40+</label>
+                </div>
+            </div>
+            <!-- Results column (right) -->
+            <div class="col-9 border border-muted">
+                <div class="border-bottom border-muted">
+                    <h5 class="p-4 text-muted">127 Search results for "keyword" in Genre Horror</h5>
+                </div>
+                <article class="d-flex py-4 border-bottom border-muted bg-light result_item">
+                    <div class="col-4 img_wrapper">
+                        <img class="img-fluid" src="./assets/books/book-12.jpg" alt="">
+                    </div>
+                    <div class="col-8 text_wrapper">
+                        <h3 class="font-weight-bold">A Caller's Game</h3>
+                        <div class="book_author">
+                            <h4 class="font-weight-bold"><span class="font-weight-normal">by</span> J.D. Barker</h4>
+                        </div>
+                        <p class="text-muted">Controversial satellite radio talk show host, Jordan Briggs, has clawed
+                            her way to
+                            the
+                            top of the
+                            broadcast world. She doesn’t hold back, doesn’t spare feelings, and has no trouble sharing
+                            what's on her
+                            mind. Her rigorous pursuit of success has come at a price, though. Her marriage is in ruins,
+                            she hasn’t
+                            spoken to her mother in years...
+                        </p>
+                        <p class="publisher"><span class="font-weight-bold">Published by:</span> Hampton Creek Press</p>
+                        <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021
+                        </p>
+                        <button class="buy_now btn text-white rounded-0 py-2 px-4 font-weight-bold">Buy Now for
+                            $9.99</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

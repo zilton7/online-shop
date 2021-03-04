@@ -79,83 +79,74 @@
       </form>
     </section>
   </header>
-  <!-- SEARCH RESULTS -->
+  <!-- HOME PAGE AREA -->
   <main>
-    <section class="d-flex search_results">
-      <!-- Filter column (left) -->
-      <div class="col-3 bg-light">
-        <!-- New or Used -->
-        <div class="custom-control custom-checkbox d-flex justify-content-around pt-4">
-          <input type="checkbox" class="custom-control-input" id="checkbox-new">
-          <label class="custom-control-label" for="checkbox-new">New</label>
-          <input type="checkbox" class="custom-control-input" id="checkbox-used">
-          <label class="custom-control-label" for="checkbox-used">Used</label>
-        </div>
-        <!-- Languages -->
-        <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Language</div>
-        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-          <input type="checkbox" class="custom-control-input" id="checkbox-english">
-          <label class="custom-control-label" for="checkbox-english">English</label>
-        </div>
-        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-          <input type="checkbox" class="custom-control-input" id="checkbox-spanish">
-          <label class="custom-control-label" for="checkbox-spanish">Spanish</label>
-        </div>
-        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-          <input type="checkbox" class="custom-control-input" id="checkbox-russian">
-          <label class="custom-control-label" for="checkbox-russian">Russian</label>
-        </div>
-        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-          <input type="checkbox" class="custom-control-input" id="checkbox-chinese">
-          <label class="custom-control-label" for="checkbox-chinese">Chinese</label>
-        </div>
-        <!-- Price Range -->
-        <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Price Range</div>
-        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-          <input type="checkbox" class="custom-control-input" id="price-1-10">
-          <label class="custom-control-label" for="price-1-10">$10 - $20</label>
-        </div>
-        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-          <input type="checkbox" class="custom-control-input" id="price-20-30">
-          <label class="custom-control-label" for="price-20-30">$20 - $30</label>
-        </div>
-        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-          <input type="checkbox" class="custom-control-input" id="price-30-40">
-          <label class="custom-control-label" for="price-30-40">$30 - $40</label>
-        </div>
-        <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-          <input type="checkbox" class="custom-control-input" id="price-40">
-          <label class="custom-control-label" for="price-40">$40+</label>
-        </div>
-      </div>
-      <!-- Results column (right) -->
-      <div class="col-9 border border-muted">
-        <div class="border-bottom border-muted">
-          <h5 class="p-4 text-muted">127 Search results for "keyword" in Genre Horror</h5>
-        </div>
-        <article class="d-flex py-4 border-bottom border-muted bg-light result_item">
-          <div class="col-4 img_wrapper">
-            <img class="img-fluid" src="./assets/books/book-12.jpg" alt="">
-          </div>
-          <div class="col-8 text_wrapper">
-            <h3 class="font-weight-bold">A Caller's Game</h3>
-            <div class="book_author">
-              <h4 class="font-weight-bold"><span class="font-weight-normal">by</span> J.D. Barker</h4>
+    <div class="container">
+      <section class="hot_ads w-100">
+        <div id="hot_ads_carousel" class="carousel slide" data-ride="carousel">
+          <h2>HOT ADS</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="row ">
+                  <div class="col-6">
+                    <img class="img-fluid" src="./assets/books/book-12.jpg">
+                  </div>
+                  <div class="col-6 px-1">
+                    <div class="card-block px-1">
+                      <h4 class="card-title">A Caller's Game</h4>
+                      <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. </p>
+                      <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
+                      <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="text-muted">Controversial satellite radio talk show host, Jordan Briggs, has clawed her way to
-              the
-              top of the
-              broadcast world. She doesn’t hold back, doesn’t spare feelings, and has no trouble sharing what's on her
-              mind. Her rigorous pursuit of success has come at a price, though. Her marriage is in ruins, she hasn’t
-              spoken to her mother in years...
-            </p>
-            <p class="publisher"><span class="font-weight-bold">Published by:</span> Hampton Creek Press</p>
-            <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021</p>
-            <button class="buy_now btn text-white rounded-0 py-2 px-4 font-weight-bold">Buy Now for $9.99</button>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="row ">
+                    <div class="col-6">
+                      <img class="img-fluid" src="./assets/books/book-10.jpg">
+                    </div>
+                    <div class="col-6 px-1">
+                      <div class="card-block px-1">
+                        <h4 class="card-title">A Caller's Game</h4>
+                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                          ut
+                          aliquip ex ea commodo consequat. </p>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                          dolore
+                          eu
+                          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                          officia
+                          deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </article>
-      </div>
-    </section>
+          <a class="carousel-control-prev bg-dark" href="#hot_ads_carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next bg-dark" href="#hot_ads_carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <!-- Bootstrap scripts -->
