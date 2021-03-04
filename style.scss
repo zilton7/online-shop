@@ -6,6 +6,11 @@ COLORS: #D35266 #888888 #383838
                 ****** RESET ******
     ==============================================
 */
+
+$first-color: #d35266;
+$second-color: #888888;
+$third-color: #383838;
+
 html {
   font-size: 62.5%;
 }
@@ -25,6 +30,8 @@ body {
 *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -46,12 +53,15 @@ a:hover {
                     ****** GLOBAL ******
         ==============================================
     */
+
 .navigation {
-  background: #383838;
+  background: $third-color;
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .special {
+    background: $first-color;
+  }
 }
-.navigation .logo {
-  font-size: 2rem;
-}
-.navigation .special {
-  background: #d35266;
-}/*# sourceMappingURL=style.css.map */
