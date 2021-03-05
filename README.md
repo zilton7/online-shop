@@ -5,7 +5,7 @@
 > This is my capstone project for Microverse's Module 1 - HTML & CSS.
 > It is Online Books Store built on Bootstrap.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./app-screenshot.png)
 
 Project is built on Bootstrap 4.3.1 and uses SASS as its CSS extension.
 
