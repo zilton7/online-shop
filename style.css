@@ -72,7 +72,19 @@ a:hover {
   color: #d35266;
 }
 
+.text_color_2 {
+  color: #888888;
+}
+
 .carousel_icon {
   font-size: 4rem;
   color: #888888;
+}
+
+.main_logo {
+  font-size: 4rem;
+}
+
+.border_color_1 {
+  border-bottom: solid 0.1rem #d35266;
 }/*# sourceMappingURL=style.css.map */
