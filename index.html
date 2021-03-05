@@ -82,15 +82,16 @@
   </header>
   <!-- HOME PAGE AREA -->
   <main>
-    <div class="container d-flex align-items-center">
-      <div>
-        <a href="#hot_ads_carousel" role="button" data-slide="prev">
-          <i class="fas fa-arrow-alt-circle-left carousel_icon"></i>
-          <span class="sr-only">Previous</span>
-        </a>
-      </div>
-      <!-- Hot Ads Carousel -->
-      <section class="hot_ads  mx-5">
+    <!-- Hot Ads Carousel -->
+
+    <div class="container d-flex">
+      <section class="hot_ads d-flex  align-items-center">
+        <div>
+          <a href="#hot_ads_carousel" role="button" data-slide="prev">
+            <i class="fas fa-arrow-alt-circle-left carousel_icon pr-2"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+        </div>
         <div id="hot_ads_carousel" class="carousel slide" data-ride="carousel">
           <h2 class="text-muted">HOT ADS</h2>
           <div class="carousel-inner">
@@ -102,8 +103,8 @@
                   </div>
                   <div class="col-6 px-1">
                     <div class="card-block">
-                      <h4 class="card-title">A Caller's Game</h4>
-                      <h5 class="card-title">by J.D. Barker</h5>
+                      <h2 class="card-title">A Caller's Game</h2>
+                      <h4 class="card-subtitle pb-2">by J.D. Barker</h4>
                       <p class="card-text">Controversial satellite radio talk show host, Jordan Briggs, has clawed
                         her
                         way to the top of the broadcast world. She doesn’t hold back, doesn’t spare feelings, and has no
@@ -117,14 +118,15 @@
             </div>
           </div>
         </div>
+        <div>
+          <a href="#hot_ads_carousel" role="button" data-slide="next">
+            <i class="fas fa-arrow-alt-circle-right carousel_icon pl-2"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </section>
-      <div>
-        <a href="#hot_ads_carousel" role="button" data-slide="next">
-          <i class="fas fa-arrow-alt-circle-right carousel_icon"></i>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
     </div>
+
   </main>
 
   <!-- Bootstrap scripts -->
