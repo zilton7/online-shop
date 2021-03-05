@@ -68,6 +68,10 @@ a:hover {
   background: #d35266 !important;
 }
 
+.text_color_1 {
+  color: #d35266;
+}
+
 .carousel_icon {
   font-size: 4rem;
   color: #888888;
