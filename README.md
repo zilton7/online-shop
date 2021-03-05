@@ -1,59 +1,36 @@
 ![](https://img.shields.io/badge/myapp-blueviolet)
 
-# Project Name
+# Capstone Project - Bookix - Online Book Store
 
-> One paragraph statement about the project.
+> This is my capstone project for Microverse's Module 1 - HTML & CSS.
+> It is Online Books Store built on Bootstrap.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+Project is built on Bootstrap 4.3.1 and uses SASS as its CSS extension.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Sass
+- Bootstrap 4.2.1
+- HTML/CSS
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://zilton7.github.io/online-shop/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+**Since project uses Bootstrap CDN you don't need anything, just download and extract files. As for Sass part you might need
+to download some Sass addon for your text editor. ie for VSCode I use 'Live Sass Compiler' **
 
 ## Authors
 
-👤 **Author1**
+👤 **Zil Norvilis**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@zilton7](https://github.com/zilton7)
+- Twitter: [@devnor7](https://twitter.com/devnor7)
+- LinkedIn: [zil-norvilis](https://www.linkedin.com/in/zil-norvilis)
 
 ## 🤝 Contributing
 
