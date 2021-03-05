@@ -65,3 +65,36 @@ a:hover {
     background: $first-color;
   }
 }
+
+.search_area {
+  background: $first-color;
+}
+
+.book_author {
+  color: $first-color;
+}
+
+.buy_now {
+  background: $first-color !important;
+}
+
+.text_color_1 {
+  color: $first-color;
+}
+
+.text_color_2 {
+  color: $second-color;
+}
+
+.carousel_icon {
+  font-size: 4rem;
+  color: $second-color;
+}
+
+.main_logo {
+  font-size: 4rem;
+}
+
+.border_color_1 {
+  border-bottom: solid 0.1rem $first-color;
+}

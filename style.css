@@ -54,4 +54,37 @@ a:hover {
 }
 .navigation .special {
   background: #d35266;
+}
+
+.search_area {
+  background: #d35266;
+}
+
+.book_author {
+  color: #d35266;
+}
+
+.buy_now {
+  background: #d35266 !important;
+}
+
+.text_color_1 {
+  color: #d35266;
+}
+
+.text_color_2 {
+  color: #888888;
+}
+
+.carousel_icon {
+  font-size: 4rem;
+  color: #888888;
+}
+
+.main_logo {
+  font-size: 4rem;
+}
+
+.border_color_1 {
+  border-bottom: solid 0.1rem #d35266;
 }/*# sourceMappingURL=style.css.map */
