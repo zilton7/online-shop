@@ -123,6 +123,15 @@ form,
   font-size: 1.2rem !important;
 }
 
+.item_more {
+  color: #6c757d;
+}
+.item_more:hover {
+  color: #d35266;
+  background: #383838;
+  cursor: pointer;
+}
+
 .social a i {
   font-size: 1.5rem;
   padding: 0 0.5rem;
