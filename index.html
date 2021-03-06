@@ -14,72 +14,10 @@
 </head>
 
 <body>
-  <header>
-    <!-- TOP NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navigation">
-      <div class="d-flex justify-content-center align-items-center">
-        <div><i class="fas fa-book main_logo text_color_1 pr-3 py-2"></i></div>
-        <div><a class="navbar-brand text-uppercase text-white font-weight-bold logo" href="#">Bookix</a></div>
-      </div>
-      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarToggler"
-        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav nav_left">
-          <li class="nav-item active">
-            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold" href=" #">Home<span
-                class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold" href=" #">Collections</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold" href="#">Purchase List</a>
-          </li>
-          <li class="nav-item rounded text-uppercase text-white font-weight-bold special">
-            <a class="nav-link px-4 text-white" href="#">Post an Ad</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto nav_right">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-envelope" style="color:grey"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-4 text-white font-weight-bold font-bold" href="#">JohnDoe</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- SEARCH AREA -->
-    <section class="d-flex flex-column align-items-center py-4 search_area">
-      <div class="search_area_header d-flex flex-column align-items-center">
-        <p class="h1 text-white font-weight-bold">BOOKIX</p>
-        <p class="text-white">Buying & Selling Books was Never Easier</p>
-      </div>
-      <form action="/search-result.html">
-        <div class="form-group d-flex flex-row justify-content-center align-items-center search_form">
-          <div class="form-group">
-            <select class="form-control form-control-lg" name="genre" id="cars">
-              <option value="" disabled selected>Select genre</option>
-              <option value="action">Action</option>
-              <option value="adventure">Adventure</option>
-              <option value="detective">Detective</option>
-              <option value="mystery">Mystery</option>
-              <option value="horror">Horror</option>
-              <option value="romance">Romance</option>
-              <option value="sci-fi">Sci-Fi</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control form-control-lg"
-              placeholder="Enter Book Title, Author, ISPN or Keyword">
-          </div>
-          <button type="submit" class="btn btn-dark btn-lg mb-3 ml-3 px-4 text-muted rounded-0">Search</button>
-        </div>
-      </form>
-    </section>
-  </header>
+  <!-- TOP NAVIGATION -->
+  <!-- Include HEADER partial -->
+  <script src="./includes/_header.js"></script>
+
   <!-- HOME PAGE AREA -->
   <main>
     <div class="container">
@@ -106,8 +44,10 @@
                       <h4 class="card-subtitle pb-2">by J.D. Barker</h4>
                       <p class="card-text">Controversial satellite radio talk show host, Jordan Briggs, has clawed
                         her
-                        way to the top of the broadcast world. She doesn’t hold back, doesn’t spare feelings, and has no
-                        trouble sharing what's on her mind. Her rigorous pursuit of success has come at a price, though.
+                        way to the top of the broadcast world. She doesn’t hold back, doesn’t spare feelings, and has
+                        no
+                        trouble sharing what's on her mind. Her rigorous pursuit of success has come at a price,
+                        though.
                         Her marriage is in ruins, she hasn’t spoken to her mother in years... </p>
                       <a href="#" class="buy_now btn btn-lg text-white rounded py-2 px-4 font-weight-bold">$9.99</a>
                     </div>
@@ -190,73 +130,9 @@
       </section>
     </div>
   </main>
-  <footer>
-    <div class="container">
-      <div class="row py-4">
-        <div class="wrapper mx-auto col-6">
-          <div class="d-flex justify-content-center align-items-center">
-            <i class="fas fa-book main_logo text_color_2 pr-4 pb-4"></i>
-            <p class="font-weight-bold h1 text_color_2">BOOKIX</p>
-          </div>
-          <div class="col-8 mx-auto">
-            <p class="h5 text-muted text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid facere ipsum nam repudiandae
-              eaque
-              culpa repellat a numquam, ullam, at animi. Soluta itaque ipsam reiciendis hic accusantium iure alias?
-            </p>
-          </div>
-        </div>
-        <!-- Genres Links -->
-        <div class=" mx-auto col-3">
-          <div class="border_color_1 mb-2">
-            <p class="text_color_1 font-weight-bold h4">GENRES</p>
-          </div>
-          <div class="category_links d-block d-md-flex justify-content-start">
-            <ul class="pr-6 mr-4">
-              <li><a class="text-muted h4" href="#">Action</a></li>
-              <li><a class="text-muted h4" href="#">Adventure</a></li>
-              <li><a class="text-muted h4" href="#">Detective</a></li>
-              <li><a class="text-muted h4" href="#">Mystery</a></li>
-              <li><a class="text-muted h4" href="#">Horror</a></li>
-              <li><a class="text-muted h4" href="#">Romance</a></li>
-              <li><a class="text-muted h4" href="#">Sci-Fi</a></li>
-            </ul>
-            <ul class="">
-              <li><a class="text-muted h4" href="#">Art</a></li>
-              <li><a class="text-muted h4" href="#">Biography</a></li>
-              <li><a class="text-muted h4" href="#">Children's</a></li>
-              <li><a class="text-muted h4" href="#">History</a></li>
-              <li><a class="text-muted h4" href="#">Music</a></li>
-              <li><a class="text-muted h4" href="#">Self Help</a></li>
-              <li><a class="text-muted h4" href="#">Travel</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Authors Links -->
-        <div class=" mx-auto col-3">
-          <div class="border_color_1 mb-2">
-            <p class="text_color_1 font-weight-bold h4">AUTHORS</p>
-          </div>
-          <div class="category_links d-flex justify-content-start">
-            <ul class="pr-6 mr-4">
-              <li><a class="text-muted h4" href="#">Stephen King</a></li>
-              <li><a class="text-muted h4" href="#">Rachel Poiners</a></li>
-              <li><a class="text-muted h4" href="#">Nikola Tesla</a></li>
-              <li><a class="text-muted h4" href="#">Leonardo Da Vinci</a></li>
-              <li><a class="text-muted h4" href="#">Michael Lewis</a></li>
-              <li><a class="text-muted h4" href="#">James Chance</a></li>
-              <li><a class="text-muted h4" href="#">Jim Kwik</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center py-4 border-top">
-        <p class="h5 text-muted">Copyright&copy; 2015 Bookix.com All Rights Reserved. Designed by Zil Norvilis, idea by
-          Mohammed Awad
-        </p>
-      </div>
-    </div>
-  </footer>
+  <!-- Include FOOTER partial -->
+  <script src="./includes/_footer.js"></script>
+
   <!-- Bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
