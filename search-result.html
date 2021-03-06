@@ -87,51 +87,60 @@
     <main>
         <section class="d-flex bg-light search_results">
             <!-- Filter column (left) -->
-            <div class="col-3 bg-light">
+            <div class="col-3 bg-light d-flex flex-column align-items-center h5 text-muted">
                 <!-- New or Used -->
-                <div class="custom-control custom-checkbox d-flex justify-content-around pt-4">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-new">
-                    <label class="custom-control-label" for="checkbox-new">New</label>
-                    <input type="checkbox" class="custom-control-input" id="checkbox-used">
-                    <label class="custom-control-label" for="checkbox-used">Used</label>
+                <div class="custom-control custom-checkbox d-flex justify-content-between pt-4">
+                    <div class="mr-3">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-new">
+                        <label class="custom-control-label" for="checkbox-new">New</label>
+                    </div>
+                    <div class="ml-3">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-used">
+                        <label class="custom-control-label" for="checkbox-used">Used</label>
+                    </div>
                 </div>
                 <!-- Languages -->
-                <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Language
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-english">
-                    <label class="custom-control-label" for="checkbox-english">English</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-spanish">
-                    <label class="custom-control-label" for="checkbox-spanish">Spanish</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-russian">
-                    <label class="custom-control-label" for="checkbox-russian">Russian</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-chinese">
-                    <label class="custom-control-label" for="checkbox-chinese">Chinese</label>
+                <div class="d-flex flex-column align-items-start pb-2">
+                    <div class="custom-control font-weight-bold border-bottom pt-3 pb-2">
+                        Language
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-english">
+                        <label class="custom-control-label" for="checkbox-english">English</label>
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-spanish">
+                        <label class="custom-control-label" for="checkbox-spanish">Spanish</label>
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-russian">
+                        <label class="custom-control-label" for="checkbox-russian">Russian</label>
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-chinese">
+                        <label class="custom-control-label" for="checkbox-chinese">Chinese</label>
+                    </div>
                 </div>
                 <!-- Price Range -->
-                <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Price Range
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="price-1-10">
-                    <label class="custom-control-label" for="price-1-10">$10 - $20</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="price-20-30">
-                    <label class="custom-control-label" for="price-20-30">$20 - $30</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="price-30-40">
-                    <label class="custom-control-label" for="price-30-40">$30 - $40</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="price-40">
-                    <label class="custom-control-label" for="price-40">$40+</label>
+                <div class="d-flex flex-column align-items-start">
+                    <div class="custom-control font-weight-bold border-bottom pt-3 pb-2">Price Range
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="price-1-10">
+                        <label class="custom-control-label" for="price-1-10">$10-$20</label>
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="price-20-30">
+                        <label class="custom-control-label" for="price-20-30">$20-$30</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="price-30-40">
+                        <label class="custom-control-label" for="price-30-40">$30-$40</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="price-40">
+                        <label class="custom-control-label" for="price-40">$40+</label>
+                    </div>
                 </div>
             </div>
             <!-- Results column (right) -->
@@ -165,7 +174,7 @@
                         <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021
                         </p>
                         <div class="buy_now_wrapper">
-                            <button class="buy_now btn text-white rounded-0 font-weight-bold">Buy Now for
+                            <button class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now for
                                 $9.99
                             </button>
                         </div>
