@@ -41,7 +41,7 @@ let header = `
       <img src="../assets/book-solid.svg" class="header_bg_logo" alt="">
       <div class="header_text_wrapper">
         <p class="h1 text-white font-weight-bold">BOOKIX</p>
-        <p class="text-white">Buying & Selling Books was Never Easier</p>
+        <p class="text-white font-weight-bold">Buying & Selling Books was Never Easier</p>
       </div>
     </div>
     <form action="/search-result.html">

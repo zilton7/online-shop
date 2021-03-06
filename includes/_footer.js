@@ -9,7 +9,7 @@ let footer = `
                     <p class="font-weight-bold h1 text_color_2">BOOKIX</p>
                 </div>
                 <div class="col-8 mx-auto">
-                    <p class="h5 text-muted text-justify">
+                    <p class="h6 text-muted text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid facere ipsum nam
                         repudiandae
                         eaque

@@ -56,6 +56,14 @@ a:hover {
   background: #d35266;
 }
 
+.nav_left li a:hover {
+  color: #d35266 !important;
+}
+
+.nav_left li a:hover .special {
+  color: #383838 !important;
+}
+
 .search_area {
   background: #d35266;
   position: relative;

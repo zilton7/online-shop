@@ -66,6 +66,16 @@ a:hover {
   }
 }
 
+.nav_left li {
+  a:hover {
+    color: $first-color !important;
+  }
+}
+
+.nav_left li a:hover .special {
+  color: $third-color !important;
+}
+
 .search_area {
   background: $first-color;
   position: relative;
