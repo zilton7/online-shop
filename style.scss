@@ -74,10 +74,6 @@ a:hover {
   color: $first-color;
 }
 
-.buy_now {
-  background: $first-color !important;
-}
-
 .text_color_1 {
   color: $first-color;
 }
@@ -97,4 +93,17 @@ a:hover {
 
 .border_color_1 {
   border-bottom: solid 0.1rem $first-color;
+}
+
+// Flexbox demonstration
+
+.buy_now_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buy_now {
+  background: $first-color !important;
+  padding: 0.5rem 2rem !important;
+  font-size: 1.2rem !important;
 }

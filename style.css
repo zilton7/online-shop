@@ -64,10 +64,6 @@ a:hover {
   color: #d35266;
 }
 
-.buy_now {
-  background: #d35266 !important;
-}
-
 .text_color_1 {
   color: #d35266;
 }
@@ -87,4 +83,15 @@ a:hover {
 
 .border_color_1 {
   border-bottom: solid 0.1rem #d35266;
+}
+
+.buy_now_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buy_now {
+  background: #d35266 !important;
+  padding: 0.5rem 2rem !important;
+  font-size: 1.2rem !important;
 }/*# sourceMappingURL=style.css.map */
