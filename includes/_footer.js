@@ -8,8 +8,8 @@ let footer = `
                     <i class="fas fa-book main_logo text_color_2 pr-4 mb-2"></i>
                     <p class="font-weight-bold h1 text_color_2">BOOKIX</p>
                 </div>
-                <div class="col-8 mx-auto">
-                    <p class="h6 text-muted text-justify">
+                <div class="h6 col-8 mx-auto about_area">
+                    <p class="text-muted text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid facere ipsum nam
                         repudiandae
                         eaque
@@ -62,8 +62,9 @@ let footer = `
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center text-muted py-4 border-top">
-            <p class="h6 text-muted">Copyright&copy; 2015 Bookix.com All Rights Reserved. Designed by Zil Norvilis,
+        <div class="d-flex justify-content-between h6 footer_copyright align-items-center text-muted py-4 border-top">
+            <p class="text-muted">Copyright&copy; 2015 Bookix.com All Rights Reserved. Designed by
+                Zil Norvilis,
                 idea by
                 Mohammed Awad
             </p>
