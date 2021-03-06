@@ -66,14 +66,17 @@ a:hover {
   }
 }
 
-.nav_left li {
-  a:hover {
-    color: $first-color !important;
-  }
+.special:hover {
+  background: white !important;
 }
 
-.nav_left li a:hover .special {
-  color: $third-color !important;
+.nav-link {
+  &:hover {
+    color: $first-color !important;
+  }
+  i:hover {
+    color: $first-color !important;
+  }
 }
 
 .search_area {
