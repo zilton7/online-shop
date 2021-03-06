@@ -94,4 +94,10 @@ a:hover {
   background: #d35266 !important;
   padding: 0.5rem 2rem !important;
   font-size: 1.2rem !important;
+}
+
+.social a i {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  color: rgba(53, 52, 52, 0.8);
 }/*# sourceMappingURL=style.css.map */
