@@ -60,10 +60,12 @@ a:hover {
   background: white !important;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-item:hover {
   color: #d35266 !important;
 }
-.nav-link i:hover {
+.nav-link i:hover,
+.nav-item i:hover {
   color: #d35266 !important;
 }
 

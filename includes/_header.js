@@ -1,7 +1,7 @@
 let header = `
 <header>
   <nav class="navbar navbar-expand-lg navigation">
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center align-items-center mx-5">
       <div><i class="fas fa-book main_logo text_color_1 pr-3 py-2"></i></div>
       <div><a class="navbar-brand text-uppercase text-white font-weight-bold logo" href="#">Bookix</a></div>
     </div>
@@ -11,26 +11,29 @@ let header = `
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav nav_left">
-        <li class="nav-item active">
+        <li class="nav-item active d-flex align-items-center text_color_2 mx-4">
+          <i class="fas fa-home"></i>
           <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold" href=" #">Home<span
               class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-flex align-items-center text_color_2 mx-4">
+          <i class="fas fa-th-large"></i>
           <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold" href=" #">Collections</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-flex align-items-center text_color_2 mx-4">
+          <i class="fas fa-shopping-cart"></i>
           <a class="nav-link px-4 text-uppercase text-muted font-weight-bold" href="#">Purchase List</a>
         </li>
-        <li class="nav-item rounded text-uppercase text-white font-weight-bold special">
+        <li class="nav-item rounded text-uppercase text-white font-weight-bold special mx-4">
           <a class="nav-link px-4 text-white" href="#">Post an Ad</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto nav_right">
-        <li class="nav-item">
+        <li class="nav-item d-flex align-items-center text_color_2 mx-4">
           <a class="nav-link" href="#"><i class="fas fa-envelope" style="color:grey"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-4 text-white font-weight-bold font-bold" href="#">JohnDoe</a>
+          <a class="nav-link px-4 text-white font-weight-bold font-bold" href="#">John Doe</a>
         </li>
       </ul>
     </div>
