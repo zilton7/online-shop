@@ -68,6 +68,25 @@ a:hover {
 
 .search_area {
   background: $first-color;
+  position: relative;
+  // background-image: url("./assets/book-solid.svg");
+  // background-size: 14rem;
+  // background-repeat: no-repeat;
+  // background-position-x: 32rem;
+  // background-position-y: -1rem;
+}
+
+.search_area .header_bg_logo {
+  position: absolute;
+  width: 12.3rem;
+  top: 0;
+  left: 30rem;
+  opacity: 0.15;
+}
+
+form,
+.header_text_wrapper {
+  z-index: 1;
 }
 
 .book_author {

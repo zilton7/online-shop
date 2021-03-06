@@ -58,6 +58,20 @@ a:hover {
 
 .search_area {
   background: #d35266;
+  position: relative;
+}
+
+.search_area .header_bg_logo {
+  position: absolute;
+  width: 12.3rem;
+  top: 0;
+  left: 30rem;
+  opacity: 0.15;
+}
+
+form,
+.header_text_wrapper {
+  z-index: 1;
 }
 
 .book_author {
