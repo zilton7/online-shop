@@ -60,10 +60,27 @@ a:hover {
   background: white !important;
 }
 
-.nav-link:hover {
+.special:hover {
+  background: white !important;
+}
+
+.nav-link:hover,
+.nav-item:hover {
   color: #d35266 !important;
 }
-.nav-link i:hover {
+.nav-link i:hover,
+.nav-item i:hover {
+  color: #d35266 !important;
+}
+
+.nav-link:hover,
+.social i:hover,
+footer li a:hover {
+  color: #d35266 !important;
+}
+.nav-link i:hover,
+.social i i:hover,
+footer li a i:hover {
   color: #d35266 !important;
 }
 
@@ -90,11 +107,11 @@ form,
 }
 
 .text_color_1 {
-  color: #d35266;
+  color: #d35266 !important;
 }
 
 .text_color_2 {
-  color: #888888;
+  color: #888888 !important;
 }
 
 .carousel_icon {
@@ -120,14 +137,56 @@ form,
   padding: 0.5rem 2rem !important;
   font-size: 1.2rem !important;
 }
+.buy_now:hover {
+  -webkit-animation-name: scaling;
+          animation-name: scaling;
+  -webkit-animation-duration: 1.9s;
+          animation-duration: 1.9s;
+}
 
+img:hover:hover,
+.navbar_logo:hover {
+  -webkit-animation-name: scaling;
+          animation-name: scaling;
+  -webkit-animation-duration: 1.9s;
+          animation-duration: 1.9s;
+}
+
+/* The animation */
+@-webkit-keyframes scaling {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes scaling {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
 .social a i {
   font-size: 1.5rem;
   padding: 0 0.5rem;
   color: rgba(53, 52, 52, 0.8);
 }
 
-@media only screen and (min-width: 768px) {
+.card_img_wrapper {
+  width: 18rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
   .category_links ul,
 .footer_copyright p,
 .about_area p {
@@ -138,5 +197,10 @@ form,
     font-size: 1.5rem;
     padding: 0 0.5rem;
     color: rgba(53, 52, 52, 0.8);
+  }
+
+  .card_img_wrapper {
+    width: 26rem;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */

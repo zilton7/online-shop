@@ -70,7 +70,23 @@ a:hover {
   background: white !important;
 }
 
-.nav-link {
+.special:hover {
+  background: white !important;
+}
+
+.nav-link,
+.nav-item {
+  &:hover {
+    color: $first-color !important;
+  }
+  i:hover {
+    color: $first-color !important;
+  }
+}
+
+.nav-link,
+.social i,
+footer li a {
   &:hover {
     color: $first-color !important;
   }
@@ -107,11 +123,11 @@ form,
 }
 
 .text_color_1 {
-  color: $first-color;
+  color: $first-color !important;
 }
 
 .text_color_2 {
-  color: $second-color;
+  color: $second-color !important;
 }
 
 .carousel_icon {
@@ -138,6 +154,32 @@ form,
   background: $first-color !important;
   padding: 0.5rem 2rem !important;
   font-size: 1.2rem !important;
+  &:hover {
+    animation-name: scaling;
+    animation-duration: 1.9s;
+  }
+}
+
+img:hover,
+.navbar_logo {
+  &:hover {
+    animation-name: scaling;
+    animation-duration: 1.9s;
+  }
+}
+
+/* The animation */
+
+@keyframes scaling {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 .social a i {
@@ -146,7 +188,12 @@ form,
   color: rgba(53, 52, 52, 0.8);
 }
 
-@media only screen and (min-width: 768px) {
+.card_img_wrapper {
+  width: 18rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
   .category_links ul,
   .footer_copyright p,
   .about_area p {
@@ -156,5 +203,9 @@ form,
     font-size: 1.5rem;
     padding: 0 0.5rem;
     color: rgba(53, 52, 52, 0.8);
+  }
+  .card_img_wrapper {
+    width: 26rem;
+    height: auto;
   }
 }
