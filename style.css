@@ -74,11 +74,13 @@ a:hover {
 }
 
 .nav-link:hover,
-.social i:hover {
+.social i:hover,
+footer li a:hover {
   color: #d35266 !important;
 }
 .nav-link i:hover,
-.social i i:hover {
+.social i i:hover,
+footer li a i:hover {
   color: #d35266 !important;
 }
 

@@ -85,7 +85,8 @@ a:hover {
 }
 
 .nav-link,
-.social i {
+.social i,
+footer li a {
   &:hover {
     color: $first-color !important;
   }
