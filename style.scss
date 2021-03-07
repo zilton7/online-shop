@@ -159,9 +159,12 @@ form,
   }
 }
 
-img:hover {
-  animation-name: scaling;
-  animation-duration: 1.9s;
+img:hover,
+.navbar_logo {
+  &:hover {
+    animation-name: scaling;
+    animation-duration: 1.9s;
+  }
 }
 
 /* The animation */

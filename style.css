@@ -142,7 +142,8 @@ form,
           animation-duration: 1.9s;
 }
 
-img:hover {
+img:hover:hover,
+.navbar_logo:hover {
   -webkit-animation-name: scaling;
           animation-name: scaling;
   -webkit-animation-duration: 1.9s;
