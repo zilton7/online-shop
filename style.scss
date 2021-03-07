@@ -138,6 +138,29 @@ form,
   background: $first-color !important;
   padding: 0.5rem 2rem !important;
   font-size: 1.2rem !important;
+  &:hover {
+    animation-name: scaling;
+    animation-duration: 1.9s;
+  }
+}
+
+img:hover {
+  animation-name: scaling;
+  animation-duration: 1.9s;
+}
+
+/* The animation */
+
+@keyframes scaling {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 .social a i {

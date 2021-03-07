@@ -120,7 +120,43 @@ form,
   padding: 0.5rem 2rem !important;
   font-size: 1.2rem !important;
 }
+.buy_now:hover {
+  -webkit-animation-name: scaling;
+          animation-name: scaling;
+  -webkit-animation-duration: 1.9s;
+          animation-duration: 1.9s;
+}
 
+img:hover {
+  -webkit-animation-name: scaling;
+          animation-name: scaling;
+  -webkit-animation-duration: 1.9s;
+          animation-duration: 1.9s;
+}
+
+/* The animation */
+@-webkit-keyframes scaling {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes scaling {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
 .social a i {
   font-size: 1.5rem;
   padding: 0 0.5rem;
