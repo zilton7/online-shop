@@ -1,6 +1,3 @@
-/* 
-COLORS: #D35266 #888888 #383838
- */
 /*
     ==============================================
                 ****** RESET ******
@@ -60,19 +57,6 @@ a:hover {
   background: white !important;
 }
 
-.special:hover {
-  background: white !important;
-}
-
-.nav-link:hover,
-.nav-item:hover {
-  color: #d35266 !important;
-}
-.nav-link i:hover,
-.nav-item i:hover {
-  color: #d35266 !important;
-}
-
 .nav-link:hover,
 .social i:hover,
 footer li a:hover {
@@ -81,6 +65,15 @@ footer li a:hover {
 .nav-link i:hover,
 .social i i:hover,
 footer li a i:hover {
+  color: #d35266 !important;
+}
+
+.nav-link:hover,
+.nav-item:hover {
+  color: #d35266 !important;
+}
+.nav-link i:hover,
+.nav-item i:hover {
   color: #d35266 !important;
 }
 
@@ -111,12 +104,12 @@ form,
 }
 
 .text_color_2 {
-  color: #888888 !important;
+  color: #888 !important;
 }
 
 .carousel_icon {
   font-size: 4rem;
-  color: #888888;
+  color: #888;
 }
 
 .main_logo {
