@@ -60,6 +60,19 @@ a:hover {
   background: white !important;
 }
 
+.special:hover {
+  background: white !important;
+}
+
+.nav-link:hover,
+.nav-item:hover {
+  color: #d35266 !important;
+}
+.nav-link i:hover,
+.nav-item i:hover {
+  color: #d35266 !important;
+}
+
 .nav-link:hover,
 .social i:hover {
   color: #d35266 !important;

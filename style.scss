@@ -70,6 +70,20 @@ a:hover {
   background: white !important;
 }
 
+.special:hover {
+  background: white !important;
+}
+
+.nav-link,
+.nav-item {
+  &:hover {
+    color: $first-color !important;
+  }
+  i:hover {
+    color: $first-color !important;
+  }
+}
+
 .nav-link,
 .social i {
   &:hover {
