@@ -44,7 +44,7 @@ let header = `
         <p class="text-white font-weight-bold">Buying & Selling Books was Never Easier</p>
       </div>
     </div>
-    <form action="/search-result.html">
+    <form action="./search-result.html">
       <div class="form-group d-flex flex-row justify-content-center align-items-center search_form">
         <div class="form-group">
           <select class="form-control form-control-lg" name="genre" id="cars">
