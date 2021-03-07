@@ -66,16 +66,44 @@ a:hover {
   }
 }
 
+.special:hover {
+  background: white !important;
+}
+
+.nav-link {
+  &:hover {
+    color: $first-color !important;
+  }
+  i:hover {
+    color: $first-color !important;
+  }
+}
+
 .search_area {
   background: $first-color;
+  position: relative;
+  // background-image: url("./assets/book-solid.svg");
+  // background-size: 14rem;
+  // background-repeat: no-repeat;
+  // background-position-x: 32rem;
+  // background-position-y: -1rem;
+}
+
+.search_area .header_bg_logo {
+  position: absolute;
+  width: 12.3rem;
+  top: 0;
+  left: 30rem;
+  opacity: 0.15;
+}
+
+form,
+.header_text_wrapper {
+  z-index: 1;
 }
 
 .book_author {
   color: $first-color;
-}
-
-.buy_now {
-  background: $first-color !important;
 }
 
 .text_color_1 {
@@ -92,9 +120,41 @@ a:hover {
 }
 
 .main_logo {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .border_color_1 {
   border-bottom: solid 0.1rem $first-color;
+}
+
+// Flexbox demonstration
+
+.buy_now_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buy_now {
+  background: $first-color !important;
+  padding: 0.5rem 2rem !important;
+  font-size: 1.2rem !important;
+}
+
+.social a i {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  color: rgba(53, 52, 52, 0.8);
+}
+
+@media only screen and (min-width: 768px) {
+  .category_links ul,
+  .footer_copyright p,
+  .about_area p {
+    font-size: 1.3rem;
+  }
+  .social a i {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    color: rgba(53, 52, 52, 0.8);
+  }
 }

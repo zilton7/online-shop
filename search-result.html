@@ -14,124 +14,68 @@
 </head>
 
 <body>
-    <header>
-        <!-- TOP NAVIGATION -->
-        <nav class="navbar navbar-expand-lg navigation">
-            <div class="container-fluid">
-                <a class="navbar-brand text-uppercase text-white font-weight-bold logo" href="#">Bookix</a>
-                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav nav_left">
-                        <li class="nav-item active">
-                            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold"
-                                href=" #">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold"
-                                href=" #">Collections</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 text-uppercase text-muted font-weight-bold" href="#">Purchase
-                                List</a>
-                        </li>
-                        <li class="nav-item rounded text-uppercase text-white font-weight-bold special">
-                            <a class="nav-link px-4 text-white" href="#">Post an Ad</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto nav_right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-envelope" style="color:grey"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 text-white font-weight-bold font-bold" href="#">JohnDoe</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- SEARCH AREA -->
-        <section class="d-flex flex-column align-items-center py-4 search_area">
-            <div class="search_area_header">
-                <h1 class="text-white font-weight-bold">BOOKIX</h1>
-                <p class="text-white">Buying & Selling Books was Never Easier</p>
-            </div>
-            <form action="#">
-                <div class="form-group d-flex flex-row justify-content-center align-items-center search_form">
-                    <div class="form-group">
-                        <select class="form-control form-control-lg" name="genre" id="cars">
-                            <option value="" disabled selected>Select genre</option>
-                            <option value="action">Action</option>
-                            <option value="adventure">Adventure</option>
-                            <option value="detective">Detective</option>
-                            <option value="mystery">Mystery</option>
-                            <option value="horror">Horror</option>
-                            <option value="romance">Romance</option>
-                            <option value="sci-fi">Sci-Fi</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-lg"
-                            placeholder="Enter Book Title, Author, ISPN or Keyword">
-                    </div>
-                    <button type="submit"
-                        class="btn btn-dark btn-lg mb-3 ml-3 px-4 text-muted rounded-0">Search</button>
-                </div>
-            </form>
-        </section>
-    </header>
+    <!-- TOP NAVIGATION -->
+    <!-- Include HEADER partial -->
+    <script src="./includes/_header.js"></script>
+
     <!-- SEARCH RESULTS -->
     <main>
-        <section class="d-flex search_results">
+        <section class="d-flex bg-light search_results">
             <!-- Filter column (left) -->
-            <div class="col-3 bg-light">
+            <div class="col-3 bg-light d-flex flex-column align-items-center h5 text-muted">
                 <!-- New or Used -->
-                <div class="custom-control custom-checkbox d-flex justify-content-around pt-4">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-new">
-                    <label class="custom-control-label" for="checkbox-new">New</label>
-                    <input type="checkbox" class="custom-control-input" id="checkbox-used">
-                    <label class="custom-control-label" for="checkbox-used">Used</label>
+                <div class="custom-control custom-checkbox d-flex justify-content-between pt-4">
+                    <div class="pl-5">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-new">
+                        <label class="custom-control-label" for="checkbox-new">New</label>
+                    </div>
+                    <div class="pl-5">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-used">
+                        <label class="custom-control-label" for="checkbox-used">Used</label>
+                    </div>
                 </div>
                 <!-- Languages -->
-                <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Language
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-english">
-                    <label class="custom-control-label" for="checkbox-english">English</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-spanish">
-                    <label class="custom-control-label" for="checkbox-spanish">Spanish</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-russian">
-                    <label class="custom-control-label" for="checkbox-russian">Russian</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="checkbox-chinese">
-                    <label class="custom-control-label" for="checkbox-chinese">Chinese</label>
+                <div class="d-flex flex-column align-items-start pb-2">
+                    <div class="custom-control font-weight-bold border-bottom pt-3 pb-2">
+                        Language
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-english">
+                        <label class="custom-control-label" for="checkbox-english">English</label>
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-spanish">
+                        <label class="custom-control-label" for="checkbox-spanish">Spanish</label>
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-russian">
+                        <label class="custom-control-label" for="checkbox-russian">Russian</label>
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="checkbox-chinese">
+                        <label class="custom-control-label" for="checkbox-chinese">Chinese</label>
+                    </div>
                 </div>
                 <!-- Price Range -->
-                <div class="custom-control font-weight-bold d-flex justify-content-start border-bottom pt-3">Price Range
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="price-1-10">
-                    <label class="custom-control-label" for="price-1-10">$10 - $20</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="price-20-30">
-                    <label class="custom-control-label" for="price-20-30">$20 - $30</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="price-30-40">
-                    <label class="custom-control-label" for="price-30-40">$30 - $40</label>
-                </div>
-                <div class="custom-control custom-checkbox d-flex justify-content-start px-5">
-                    <input type="checkbox" class="custom-control-input" id="price-40">
-                    <label class="custom-control-label" for="price-40">$40+</label>
+                <div class="d-flex flex-column align-items-start">
+                    <div class="custom-control font-weight-bold border-bottom pt-3 pb-2">Price Range
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="price-1-10">
+                        <label class="custom-control-label" for="price-1-10">$10-$20</label>
+                    </div>
+                    <div class="custom-control custom-checkbox px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="price-20-30">
+                        <label class="custom-control-label" for="price-20-30">$20-$30</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="price-30-40">
+                        <label class="custom-control-label" for="price-30-40">$30-$40</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex px-5 pb-2">
+                        <input type="checkbox" class="custom-control-input" id="price-40">
+                        <label class="custom-control-label" for="price-40">$40+</label>
+                    </div>
                 </div>
             </div>
             <!-- Results column (right) -->
@@ -144,7 +88,10 @@
                         <img class="img-fluid" src="./assets/books/book-12.jpg" alt="">
                     </div>
                     <div class="col-8 text_wrapper">
-                        <h3 class="font-weight-bold">A Caller's Game</h3>
+                        <div class="result_item_wrapper d-flex justify-content-between">
+                            <h3 class="font-weight-bold">A Caller's Game</h3>
+                            <i class="far fa-plus-square h3 text-muted"></i>
+                        </div>
                         <div class="book_author">
                             <h4 class="font-weight-bold"><span class="font-weight-normal">by</span> J.D. Barker</h4>
                         </div>
@@ -161,13 +108,18 @@
                         <p class="publisher"><span class="font-weight-bold">Published by:</span> Hampton Creek Press</p>
                         <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021
                         </p>
-                        <button class="buy_now btn text-white rounded-0 py-2 px-4 font-weight-bold">Buy Now for
-                            $9.99</button>
+                        <div class="buy_now_wrapper">
+                            <button class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now for
+                                $9.99
+                            </button>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
     </main>
+    <!-- Include FOOTER partial -->
+    <script src="./includes/_footer.js"></script>
 
     <!-- Bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
