@@ -90,11 +90,11 @@ form,
 }
 
 .text_color_1 {
-  color: #d35266;
+  color: #d35266 !important;
 }
 
 .text_color_2 {
-  color: #888888;
+  color: #888888 !important;
 }
 
 .carousel_icon {

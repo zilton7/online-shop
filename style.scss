@@ -107,11 +107,11 @@ form,
 }
 
 .text_color_1 {
-  color: $first-color;
+  color: $first-color !important;
 }
 
 .text_color_2 {
-  color: $second-color;
+  color: $second-color !important;
 }
 
 .carousel_icon {
