@@ -14,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Gotham, Helvetica;
+  font-family: Gotham, Helvetica, 'Times New Roman', Times, serif;
 }
 
 :root {
@@ -67,22 +67,28 @@ a:hover {
   background: white !important;
 }
 
-.nav-link,
-.social i,
-footer li a {
-  &:hover {
-    color: $first-color !important;
-  }
-  i:hover {
+footer i:hover {
+  color: $first-color !important;
+}
+
+footer li {
+  a:hover {
     color: $first-color !important;
   }
 }
 
 .nav-link,
-.nav-item {
-  &:hover {
-    color: $first-color !important;
+footer li {
+  color: $first-color !important;
+}
+
+.social {
+  a i {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    color: rgba(53, 52, 52, 0.8);
   }
+
   i:hover {
     color: $first-color !important;
   }
@@ -142,6 +148,7 @@ form,
   background: $first-color !important;
   padding: 0.5rem 2rem !important;
   font-size: 1.2rem !important;
+
   &:hover {
     animation-name: scaling;
     animation-duration: 1.9s;
@@ -162,18 +169,14 @@ img:hover,
   0% {
     scale: 1;
   }
+
   50% {
     scale: 1.05;
   }
+
   100% {
     scale: 1;
   }
-}
-
-.social a i {
-  font-size: 1.5rem;
-  padding: 0 0.5rem;
-  color: rgba(53, 52, 52, 0.8);
 }
 
 .card_img_wrapper {
@@ -187,11 +190,13 @@ img:hover,
   .about_area p {
     font-size: 1.3rem;
   }
+
   .social a i {
     font-size: 1.5rem;
     padding: 0 0.5rem;
     color: rgba(53, 52, 52, 0.8);
   }
+
   .card_img_wrapper {
     width: 26rem;
     height: auto;

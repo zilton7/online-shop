@@ -4,11 +4,11 @@
   "description": "## style command  npx stylelint \"**/*.{css,scss}\"",
   "main": "index.js",
   "devDependencies": {
-    "hint": "6.0.x",
-    "stylelint": "13.3.x",
-    "stylelint-config-standard": "20.0.x",
-    "stylelint-csstree-validator": "^1.8.0",
-    "stylelint-scss": "3.17.x"
+    "hint": "^6.0.7",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2"
   },
   "scripts": {
     "test": "npm run webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
