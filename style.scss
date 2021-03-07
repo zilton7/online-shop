@@ -70,7 +70,8 @@ a:hover {
   background: white !important;
 }
 
-.nav-link {
+.nav-link,
+.social i {
   &:hover {
     color: $first-color !important;
   }
