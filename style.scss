@@ -188,7 +188,12 @@ img:hover,
   color: rgba(53, 52, 52, 0.8);
 }
 
-@media only screen and (min-width: 768px) {
+.card_img_wrapper {
+  width: 18rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
   .category_links ul,
   .footer_copyright p,
   .about_area p {
@@ -198,5 +203,9 @@ img:hover,
     font-size: 1.5rem;
     padding: 0 0.5rem;
     color: rgba(53, 52, 52, 0.8);
+  }
+  .card_img_wrapper {
+    width: 26rem;
+    height: auto;
   }
 }
