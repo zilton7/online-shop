@@ -63,18 +63,8 @@ a:hover {
   }
 }
 
-.special:hover {
-  background: white !important;
-}
-
 footer i:hover {
   color: $first-color !important;
-}
-
-footer li {
-  a:hover {
-    color: $first-color !important;
-  }
 }
 
 .nav-link,
@@ -90,6 +80,28 @@ footer li {
   }
 
   i:hover {
+    color: $first-color !important;
+  }
+}
+
+.nav-link,
+.nav-item {
+  &:hover {
+    color: $first-color !important;
+  }
+
+  i:hover {
+    color: $first-color !important;
+  }
+}
+
+.special:hover {
+  background: white !important;
+  color: $first-color !important;
+}
+
+footer li {
+  a:hover {
     color: $first-color !important;
   }
 }

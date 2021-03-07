@@ -55,15 +55,7 @@ a:hover {
   background: #d35266;
 }
 
-.special:hover {
-  background: white !important;
-}
-
 footer i:hover {
-  color: #d35266 !important;
-}
-
-footer li a:hover {
   color: #d35266 !important;
 }
 
@@ -79,6 +71,25 @@ footer li {
 }
 
 .social i:hover {
+  color: #d35266 !important;
+}
+
+.nav-link:hover,
+.nav-item:hover {
+  color: #d35266 !important;
+}
+
+.nav-link i:hover,
+.nav-item i:hover {
+  color: #d35266 !important;
+}
+
+.special:hover {
+  background: white !important;
+  color: #d35266 !important;
+}
+
+footer li a:hover {
   color: #d35266 !important;
 }
 
