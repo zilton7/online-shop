@@ -104,12 +104,14 @@
 
     <!-- SEARCH RESULTS -->
     <main>
-        <section class="d-flex bg-light search_results">
+        <section class="d-flex flex-column align-items-center align-items-md-start flex-md-row bg-light">
             <!-- Filter column (left) -->
-            <div class="col-3 bg-light d-flex flex-column align-items-center h5 text-muted">
+            <div
+                class="col-3 bg-light d-flex flex-row flex-md-column justify-content-center align-items-md-center h5 text-muted">
                 <!-- New or Used -->
-                <div class="custom-control custom-checkbox d-flex justify-content-between pt-4">
-                    <div class="pl-5">
+                <div
+                    class="custom-control custom-checkbox d-flex flex-column flex-md-row justify-content-md-between pt-4">
+                    <div class="pl-5 pb-2">
                         <input type="checkbox" class="custom-control-input" id="checkbox-new">
                         <label class="custom-control-label" for="checkbox-new">New</label>
                     </div>
@@ -355,7 +357,7 @@
     </main>
     <footer>
         <div class="container-fluid px-5">
-            <div class="d-flex flex-sm-column flex-md-row py-4">
+            <div class="d-flex flex-column flex-md-row py-4">
                 <!-- About -->
                 <div class="wrapper mx-auto col-6">
                     <div class="d-flex justify-content-center align-items-center">
