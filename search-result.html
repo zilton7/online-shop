@@ -7,9 +7,9 @@
     <link rel='icon' href="#">
     <link rel="shortcut icon" href="./assets/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Bookix - Search Result</title>
 </head>
 
@@ -18,39 +18,41 @@
     <header>
         <nav class="navbar navbar-expand-lg navigation">
             <div class="d-flex justify-content-center align-items-center mx-5 navbar_logo">
-                <div><i class="fas fa-book main_logo text_color_1 pr-3 py-2"></i></div>
-                <div><a class="navbar-brand text-uppercase text-white font-weight-bold logo" href="#">Bookix</a></div>
+                <div><a href="./index.html"><i class="fas fa-book main_logo text_color_1 pr-3 py-2"></i></a></div>
+                <div><a class="navbar-brand text-uppercase text-white font-weight-bold logo"
+                        href="./index.html">Bookix</a>
+                </div>
             </div>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav nav_left">
+                <ul class="nav navbar-nav nav_left">
                     <li class="nav-item active d-flex align-items-center text_color_2 mx-4">
                         <i class="fas fa-home"></i>
-                        <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold"
-                            href=" #">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link px-4 text-uppercase text_color_2 font-weight-bold font-bold"
+                            href="./index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item d-flex align-items-center text_color_2 mx-4">
                         <i class="fas fa-th-large"></i>
-                        <a class="nav-link px-4 text-uppercase text-muted font-weight-bold font-bold"
+                        <a class="nav-link px-4 text-uppercase text_color_2 font-weight-bold font-bold"
                             href=" #">Collections</a>
                     </li>
                     <li class="nav-item d-flex align-items-center text_color_2 mx-4">
                         <i class="fas fa-shopping-cart"></i>
-                        <a class="nav-link px-4 text-uppercase text-muted font-weight-bold" href="#">Purchase List</a>
+                        <a class="nav-link px-4 text-uppercase text_color_2 font-weight-bold" href="#">Purchase List</a>
                     </li>
                     <li class="nav-item rounded text-uppercase text-white font-weight-bold special mx-4">
-                        <a class="nav-link px-4 text-white" href="#">Post an Ad</a>
+                        <a class="nav-link px-4" href="#">Post an Ad</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto nav_right">
-                    <li class="nav-item d-flex align-items-center text_color_2 mx-4">
-                        <a class="nav-link" href="#"><i class="fas fa-envelope" style="color:grey"></i></a>
+                    <li class="nav-item d-flex align-items-center mx-4">
+                        <a class="nav-link text_color_2" href="#"><i class="fas fa-envelope"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-4 text-white font-weight-bold font-bold" href="#">John Doe</a>
+                        <a class="nav-link px-4 text_color_2 font-weight-bold font-bold" href="#">John Doe</a>
                     </li>
                 </ul>
             </div>
@@ -65,10 +67,10 @@
                 </div>
             </div>
             <form action="./search-result.html">
-                <div class="form-group d-flex flex-row justify-content-center align-items-center search_form">
+                <div class="form-group d-flex justify-content-center align-items-center search_form">
                     <div class="form-group">
-                        <select class="form-control form-control-lg" name="genre" id="cars">
-                            <option value="" disabled selected>Select genre</option>
+                        <select class="form-control form-control-lg" name="genre" id="genres">
+                            <option value="" disabled selected>Select Genre</option>
                             <option value="action">Action</option>
                             <option value="adventure">Adventure</option>
                             <option value="detective">Detective</option>
@@ -78,7 +80,19 @@
                             <option value="sci-fi">Sci-Fi</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group ml-1">
+                        <select class="form-control form-control-lg" name="genre" id="area">
+                            <option value="" disabled selected>Select Area</option>
+                            <option value="sf">San Francisco</option>
+                            <option value="ny">New York</option>
+                            <option value="la">Los Angeles</option>
+                            <option value="mi">Miami</option>
+                            <option value="ch">Chicago</option>
+                            <option value="dt">Detroit</option>
+                            <option value="st">Seattle</option>
+                        </select>
+                    </div>
+                    <div class="form-group ml-1">
                         <input type="text" class="form-control form-control-lg"
                             placeholder="Enter Book Title, Author, ISPN or Keyword">
                     </div>
@@ -91,12 +105,14 @@
 
     <!-- SEARCH RESULTS -->
     <main>
-        <section class="d-flex bg-light search_results">
+        <section class="d-flex flex-column align-items-center align-items-md-start flex-md-row bg-light">
             <!-- Filter column (left) -->
-            <div class="col-3 bg-light d-flex flex-column align-items-center h5 text-muted">
+            <div
+                class="col-3 bg-light d-flex flex-row flex-md-column justify-content-center align-items-md-center h5 text-muted">
                 <!-- New or Used -->
-                <div class="custom-control custom-checkbox d-flex justify-content-between pt-4">
-                    <div class="pl-5">
+                <div
+                    class="custom-control custom-checkbox d-flex flex-column flex-md-row justify-content-md-between pt-4">
+                    <div class="pl-5 pb-2">
                         <input type="checkbox" class="custom-control-input" id="checkbox-new">
                         <label class="custom-control-label" for="checkbox-new">New</label>
                     </div>
@@ -154,19 +170,20 @@
                 <div class="border-bottom border-muted">
                     <h5 class="p-4 text-muted">127 Search results for "keyword" in Genre Horror</h5>
                 </div>
-                <article class="d-flex py-4 border border-muted bg-light result_item mb-4">
-                    <div class="col-4 img_wrapper">
-                        <img class="img-fluid" src="./assets/books/book-12.jpg" alt="">
+                <article
+                    class="d-flex flex-column flex-md-row justify-content-center align-items-center py-4 border border-muted bg-light result_item mb-4">
+                    <div class="col-4 mb-2 img_wrapper">
+                        <img class="img-fluid" src="./assets/books/book-12.jpg" alt="book cover">
                     </div>
                     <div class="col-8 text_wrapper">
                         <div class="result_item_wrapper d-flex justify-content-between">
-                            <h3 class="font-weight-bold">A Caller's Game</h3>
-                            <i class="far fa-plus-square h3 text-muted"></i>
+                            <h2 class="font-weight-bold">A Caller's Game</h2>
+                            <a href="#"><i class="far fa-plus-square h3 text-muted"></i></a>
                         </div>
                         <div class="book_author">
-                            <h4 class="font-weight-bold"><span class="font-weight-normal">by</span> J.D. Barker</h4>
+                            <h3 class="font-weight-bold"><span class="font-weight-normal">by</span> J.D. Barker</h3>
                         </div>
-                        <p class="text-muted">Controversial satellite radio talk show host, Jordan Briggs, has clawed
+                        <p class="text-muted h5">Controversial satellite radio talk show host, Jordan Briggs, has clawed
                             her way to
                             the
                             top of the
@@ -176,28 +193,32 @@
                             she hasn’t
                             spoken to her mother in years...
                         </p>
-                        <p class="publisher"><span class="font-weight-bold">Published by:</span> Hampton Creek Press</p>
-                        <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021
+                        <p class="publisher h5"><span class="font-weight-bold">Published by:</span> Hampton Creek Press
                         </p>
-                        <div class="buy_now_wrapper">
-                            <button class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now for
+                        <p class="publish_date h5"><span class="font-weight-bold">Publish date: </span>February 22nd
+                            2021
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now
+                                for
                                 $9.99
                             </button>
                         </div>
                     </div>
                 </article>
-                <article class="d-flex py-4 border border-muted result_item mb-4">
-                    <div class="col-4 img_wrapper">
+                <article
+                    class="d-flex flex-column flex-md-row justify-content-center align-items-center py-4 border border-muted bg-light result_item mb-4">
+                    <div class="col-4 mb-2 img_wrapper">
                         <img class="img-fluid" src="./assets/books/book-11.jpg" alt="">
                     </div>
                     <div class="col-8 text_wrapper">
                         <div class="result_item_wrapper d-flex justify-content-between">
-                            <h3 class="font-weight-bold">Life After Death</h3>
-                            <i class="far fa-plus-square h3 text-muted"></i>
+                            <h2 class="font-weight-bold">Life After Death</h2>
+                            <a href="#"><i class="far fa-plus-square h3 text-muted"></i></a>
                         </div>
                         <div class="book_author">
-                            <h4 class="font-weight-bold"><span class="font-weight-normal">by
-                                </span> Sister Souljah</h4>
+                            <h3 class="font-weight-bold"><span class="font-weight-normal">by
+                                </span> Sister Souljah</h3>
                         </div>
                         <p class="text-muted">Controversial satellite radio talk show host, Jordan Briggs, has clawed
                             her way to
@@ -212,25 +233,28 @@
                         <p class="publisher"><span class="font-weight-bold">Published by:</span> Hampton Creek Press</p>
                         <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021
                         </p>
-                        <div class="buy_now_wrapper">
-                            <button class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now for
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now
+                                for
                                 $17.99
                             </button>
                         </div>
                     </div>
                 </article>
-                <article class="d-flex py-4 border border-muted bg-light result_item mb-4">
-                    <div class="col-4 img_wrapper">
+                <article
+                    class="d-flex flex-column flex-md-row justify-content-center align-items-center py-4 border border-muted bg-light result_item mb-4">
+
+                    <div class="col-4 mb-2 img_wrapper">
                         <img class="img-fluid" src="./assets/books/book-10.jpg" alt="">
                     </div>
                     <div class="col-8 text_wrapper">
                         <div class="result_item_wrapper d-flex justify-content-between">
-                            <h3 class="font-weight-bold">What's Mine and Yours</h3>
-                            <i class="far fa-plus-square h3 text-muted"></i>
+                            <h2 class="font-weight-bold">What's Mine and Yours</h2>
+                            <a href="#"><i class="far fa-plus-square h3 text-muted"></i></a>
                         </div>
                         <div class="book_author">
-                            <h4 class="font-weight-bold"><span class="font-weight-normal">by
-                                </span> Naima Coster</h4>
+                            <h3 class="font-weight-bold"><span class="font-weight-normal">by
+                                </span> Naima Coster</h3>
                         </div>
                         <p class="text-muted">Controversial satellite radio talk show host, Jordan Briggs, has clawed
                             her way to
@@ -245,25 +269,27 @@
                         <p class="publisher"><span class="font-weight-bold">Published by:</span> Hampton Creek Press</p>
                         <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021
                         </p>
-                        <div class="buy_now_wrapper">
-                            <button class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now for
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now
+                                for
                                 $17.99
                             </button>
                         </div>
                     </div>
                 </article>
-                <article class="d-flex py-4 border border-muted result_item mb-4">
-                    <div class="col-4 img_wrapper">
+                <article
+                    class="d-flex flex-column flex-md-row justify-content-center align-items-center py-4 border border-muted bg-light result_item mb-4">
+                    <div class="col-4 mb-2 img_wrapper">
                         <img class="img-fluid" src="./assets/books/book-09.jpg" alt="">
                     </div>
                     <div class="col-8 text_wrapper">
                         <div class="result_item_wrapper d-flex justify-content-between">
-                            <h3 class="font-weight-bold">Sunflower Sisters</h3>
-                            <i class="far fa-plus-square h3 text-muted"></i>
+                            <h2 class="font-weight-bold">Sunflower Sisters</h2>
+                            <a href="#"><i class="far fa-plus-square h3 text-muted"></i></a>
                         </div>
                         <div class="book_author">
-                            <h4 class="font-weight-bold"><span class="font-weight-normal">by
-                                </span> Martha Hall Kelly</h4>
+                            <h3 class="font-weight-bold"><span class="font-weight-normal">by
+                                </span> Martha Hall Kelly</h3>
                         </div>
                         <p class="text-muted">Controversial satellite radio talk show host, Jordan Briggs, has clawed
                             her way to
@@ -278,25 +304,27 @@
                         <p class="publisher"><span class="font-weight-bold">Published by:</span> Hampton Creek Press</p>
                         <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021
                         </p>
-                        <div class="buy_now_wrapper">
-                            <button class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now for
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now
+                                for
                                 $7.99
                             </button>
                         </div>
                     </div>
                 </article>
-                <article class="d-flex py-4 border border-muted bg-light result_item mb-4">
-                    <div class="col-4 img_wrapper">
+                <article
+                    class="d-flex flex-column flex-md-row justify-content-center align-items-center py-4 border border-muted bg-light result_item mb-4">
+                    <div class="col-4 mb-2 img_wrapper">
                         <img class="img-fluid" src="./assets/books/book-08.jpg" alt="">
                     </div>
                     <div class="col-8 text_wrapper">
                         <div class="result_item_wrapper d-flex justify-content-between">
-                            <h3 class="font-weight-bold">What Happened to You?</h3>
-                            <i class="far fa-plus-square h3 text-muted"></i>
+                            <h2 class="font-weight-bold">What Happened to You?</h2>
+                            <a href="#"><i class="far fa-plus-square h3 text-muted"></i></a>
                         </div>
                         <div class="book_author">
-                            <h4 class="font-weight-bold"><span class="font-weight-normal">by
-                                </span> Bruce D. Perry</h4>
+                            <h3 class="font-weight-bold"><span class="font-weight-normal">by
+                                </span> Bruce D. Perry</h3>
                         </div>
                         <p class="text-muted">Controversial satellite radio talk show host, Jordan Briggs, has clawed
                             her way to
@@ -311,8 +339,9 @@
                         <p class="publisher"><span class="font-weight-bold">Published by:</span> Hampton Creek Press</p>
                         <p class="publish_date"><span class="font-weight-bold">Publish date: </span>February 22nd 2021
                         </p>
-                        <div class="buy_now_wrapper">
-                            <button class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now for
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="buy_now btn text-white rounded-0 font-weight-bolder">Buy Now
+                                for
                                 $0.99
                             </button>
                         </div>
@@ -335,7 +364,7 @@
     </main>
     <footer>
         <div class="container-fluid px-5">
-            <div class="row py-4">
+            <div class="d-flex flex-column flex-md-row py-4">
                 <!-- About -->
                 <div class="wrapper mx-auto col-6">
                     <div class="d-flex justify-content-center align-items-center">
@@ -359,22 +388,22 @@
                     </div>
                     <div class="category_links d-block d-md-flex justify-content-start">
                         <ul class="pr-6 mr-4 h6">
-                            <li><a class="text-muted" href="#">Action</a></li>
-                            <li><a class="text-muted" href="#">Adventure</a></li>
-                            <li><a class="text-muted" href="#">Detective</a></li>
-                            <li><a class="text-muted" href="#">Mystery</a></li>
-                            <li><a class="text-muted" href="#">Horror</a></li>
-                            <li><a class="text-muted" href="#">Romance</a></li>
-                            <li><a class="text-muted" href="#">Sci-Fi</a></li>
+                            <li><a class="text_color_2" href="#">Action</a></li>
+                            <li><a class="text_color_2" href="#">Adventure</a></li>
+                            <li><a class="text_color_2" href="#">Detective</a></li>
+                            <li><a class="text_color_2" href="#">Mystery</a></li>
+                            <li><a class="text_color_2" href="#">Horror</a></li>
+                            <li><a class="text_color_2" href="#">Romance</a></li>
+                            <li><a class="text_color_2" href="#">Sci-Fi</a></li>
                         </ul>
                         <ul class="h6">
-                            <li><a class="text-muted" href="#">Art</a></li>
-                            <li><a class="text-muted" href="#">Biography</a></li>
-                            <li><a class="text-muted" href="#">Children's</a></li>
-                            <li><a class="text-muted" href="#">History</a></li>
-                            <li><a class="text-muted" href="#">Music</a></li>
-                            <li><a class="text-muted" href="#">Self Help</a></li>
-                            <li><a class="text-muted" href="#">Travel</a></li>
+                            <li><a class="text_color_2" href="#">Art</a></li>
+                            <li><a class="text_color_2" href="#">Biography</a></li>
+                            <li><a class="text_color_2" href="#">Children's</a></li>
+                            <li><a class="text_color_2" href="#">History</a></li>
+                            <li><a class="text_color_2" href="#">Music</a></li>
+                            <li><a class="text_color_2" href="#">Self Help</a></li>
+                            <li><a class="text_color_2" href="#">Travel</a></li>
                         </ul>
                     </div>
                 </div>
@@ -385,20 +414,20 @@
                     </div>
                     <div class="category_links d-flex justify-content-start">
                         <ul class="pr-6 mr-4 h6">
-                            <li><a class="text-muted" href="#">Stephen King</a></li>
-                            <li><a class="text-muted" href="#">Rachel Poiners</a></li>
-                            <li><a class="text-muted" href="#">Nikola Tesla</a></li>
-                            <li><a class="text-muted" href="#">Leonardo Da Vinci</a></li>
-                            <li><a class="text-muted" href="#">Michael Lewis</a></li>
-                            <li><a class="text-muted" href="#">James Chance</a></li>
-                            <li><a class="text-muted" href="#">Jim Kwik</a></li>
+                            <li><a class="text_color_2" href="#">Stephen King</a></li>
+                            <li><a class="text_color_2" href="#">Rachel Poiners</a></li>
+                            <li><a class="text_color_2" href="#">Nikola Tesla</a></li>
+                            <li><a class="text_color_2" href="#">Leonardo Da Vinci</a></li>
+                            <li><a class="text_color_2" href="#">Michael Lewis</a></li>
+                            <li><a class="text_color_2" href="#">James Chance</a></li>
+                            <li><a class="text_color_2" href="#">Jim Kwik</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div
-                class="d-flex justify-content-between h6 footer_copyright align-items-center text-muted py-4 border-top">
-                <p class="text-muted">Copyright&copy; 2015 Bookix.com All Rights Reserved. Designed by
+                class="d-flex flex-sm-column flex-md-row justify-content-between h6 footer_copyright align-items-center text-muted py-4 border-top">
+                <p class="text-muted">Copyright&copy; 2021 Bookix.com All Rights Reserved. Designed by
                     Zil Norvilis,
                     idea by
                     Mohammed Awad

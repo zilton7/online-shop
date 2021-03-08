@@ -44,9 +44,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Design idea by [Mathew Njuguna and others on Behance](https://www.behance.net/M_Awad)
+- Base layout: [link](https://www.behance.net/gallery/24796463/ZATTIX)
 
 ## 📝 License
 

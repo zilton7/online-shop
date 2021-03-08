@@ -1,6 +1,3 @@
-/* 
-COLORS: #D35266 #888888 #383838
- */
 /*
     ==============================================
                 ****** RESET ******
@@ -12,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Gotham, Helvetica;
+  font-family: Gotham, Helvetica, "Times New Roman", Times, serif;
 }
 
 :root {
@@ -49,39 +46,35 @@ a:hover {
 .navigation {
   background: #383838;
 }
+
 .navigation .logo {
   font-size: 2rem;
 }
+
 .navigation .special {
   background: #d35266;
 }
 
-.special:hover {
-  background: white !important;
+.social a i {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  color: rgba(53, 52, 52, 0.8);
 }
 
-.special:hover {
-  background: white !important;
-}
-
-.nav-link:hover,
-.nav-item:hover {
-  color: #d35266 !important;
-}
-.nav-link i:hover,
-.nav-item i:hover {
-  color: #d35266 !important;
-}
-
-.nav-link:hover,
+footer i:hover,
+footer li,
 .social i:hover,
-footer li a:hover {
-  color: #d35266 !important;
+.nav-link:hover,
+.nav-item:hover,
+footer li a:hover,
+.book_author,
+.text_color_1 {
+  color: #d35266;
 }
-.nav-link i:hover,
-.social i i:hover,
-footer li a i:hover {
-  color: #d35266 !important;
+
+li.special a:hover {
+  background: white;
+  color: #d35266;
 }
 
 .search_area {
@@ -102,21 +95,13 @@ form,
   z-index: 1;
 }
 
-.book_author {
-  color: #d35266;
-}
-
-.text_color_1 {
-  color: #d35266 !important;
-}
-
 .text_color_2 {
-  color: #888888 !important;
+  color: #888;
 }
 
 .carousel_icon {
   font-size: 4rem;
-  color: #888888;
+  color: #888;
 }
 
 .main_logo {
@@ -127,29 +112,25 @@ form,
   border-bottom: solid 0.1rem #d35266;
 }
 
-.buy_now_wrapper {
-  display: flex;
-  justify-content: flex-end;
+.buy_now {
+  background: #d35266;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
 }
 
-.buy_now {
-  background: #d35266 !important;
-  padding: 0.5rem 2rem !important;
-  font-size: 1.2rem !important;
-}
 .buy_now:hover {
   -webkit-animation-name: scaling;
-          animation-name: scaling;
+  animation-name: scaling;
   -webkit-animation-duration: 1.9s;
-          animation-duration: 1.9s;
+  animation-duration: 1.9s;
 }
 
 img:hover:hover,
 .navbar_logo:hover {
   -webkit-animation-name: scaling;
-          animation-name: scaling;
+  animation-name: scaling;
   -webkit-animation-duration: 1.9s;
-          animation-duration: 1.9s;
+  animation-duration: 1.9s;
 }
 
 /* The animation */
@@ -157,28 +138,28 @@ img:hover:hover,
   0% {
     scale: 1;
   }
+
   50% {
     scale: 1.05;
   }
+
   100% {
     scale: 1;
   }
 }
+
 @keyframes scaling {
   0% {
     scale: 1;
   }
+
   50% {
     scale: 1.05;
   }
+
   100% {
     scale: 1;
   }
-}
-.social a i {
-  font-size: 1.5rem;
-  padding: 0 0.5rem;
-  color: rgba(53, 52, 52, 0.8);
 }
 
 .card_img_wrapper {
@@ -188,8 +169,8 @@ img:hover:hover,
 
 @media only screen and (max-width: 768px) {
   .category_links ul,
-.footer_copyright p,
-.about_area p {
+  .footer_copyright p,
+  .about_area p {
     font-size: 1.3rem;
   }
 
@@ -203,4 +184,4 @@ img:hover:hover,
     width: 26rem;
     height: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}
