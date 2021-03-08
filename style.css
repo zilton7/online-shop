@@ -64,19 +64,17 @@ a:hover {
 footer i:hover,
 footer li,
 .social i:hover,
-.nav-link i:hover,
-.nav-item i:hover,
 .nav-link:hover,
 .nav-item:hover,
 footer li a:hover,
 .book_author,
 .text_color_1 {
-  color: #d35266 !important;
+  color: #d35266;
 }
 
-.special:hover {
-  background: white !important;
-  color: #d35266 !important;
+li.special a:hover {
+  background: white;
+  color: #d35266;
 }
 
 .search_area {
@@ -98,7 +96,7 @@ form,
 }
 
 .text_color_2 {
-  color: #888 !important;
+  color: #888;
 }
 
 .carousel_icon {
@@ -114,15 +112,10 @@ form,
   border-bottom: solid 0.1rem #d35266;
 }
 
-.buy_now_wrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .buy_now {
-  background: #d35266 !important;
-  padding: 0.5rem 2rem !important;
-  font-size: 1.2rem !important;
+  background: #d35266;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
 }
 
 .buy_now:hover {
