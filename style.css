@@ -55,41 +55,28 @@ a:hover {
   background: #d35266;
 }
 
-footer i:hover {
-  color: #d35266 !important;
-}
-
-.nav-link,
-footer li {
-  color: #d35266 !important;
-}
-
 .social a i {
   font-size: 1.5rem;
   padding: 0 0.5rem;
   color: rgba(53, 52, 52, 0.8);
 }
 
-.social i:hover {
-  color: #d35266 !important;
-}
-
-.nav-link:hover,
-.nav-item:hover {
-  color: #d35266 !important;
-}
-
+footer i:hover,
+.nav-link,
+footer li,
+.social i:hover,
 .nav-link i:hover,
-.nav-item i:hover {
+.nav-item i:hover,
+.nav-link:hover,
+.nav-item:hover,
+footer li a:hover,
+.book_author,
+.text_color_1 {
   color: #d35266 !important;
 }
 
 .special:hover {
   background: white !important;
-  color: #d35266 !important;
-}
-
-footer li a:hover {
   color: #d35266 !important;
 }
 
@@ -109,14 +96,6 @@ footer li a:hover {
 form,
 .header_text_wrapper {
   z-index: 1;
-}
-
-.book_author {
-  color: #d35266;
-}
-
-.text_color_1 {
-  color: #d35266 !important;
 }
 
 .text_color_2 {
@@ -213,4 +192,4 @@ img:hover:hover,
     width: 26rem;
     height: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}
