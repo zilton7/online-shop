@@ -2,12 +2,9 @@
 
 # Capstone Project - Bookix - Online Book Store
 
-> This is my capstone project for Microverse's Module 1 - HTML & CSS.
-> It is Online Books Store built on Bootstrap.
-
 ![screenshot](./app-screenshot.png)
 
-Project is built on Bootstrap 4.3.1 and uses SASS as its CSS extension.
+This design was built with online books stores in mind. It consists of 2 pages. The main page and the search result page.
 
 ## Built With
 
