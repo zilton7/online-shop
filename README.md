@@ -1,10 +1,8 @@
-![](https://img.shields.io/badge/myapp-blueviolet)
-
 # Capstone Project - Bookix - Online Book Store
 
-![screenshot](./app-screenshot.png)
-
 This responsive design was built with online books stores in mind. It consists of 2 pages. The main page and the search result page. In the main page there is book showcase on the very top, built with Bootstrap Carousel and filter options on the left.
+
+![screenshot](./app-screenshot.png)
 
 ## Built With
 
